@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="EnjoyTrip_cho_kim"/>
+<aop-project name="SpringMVCAdv"/>
+<aop-project name="board5_restapi"/>
+<aop-project name="springDB"/>
+<aop-project name="electronicsProject"/>
+<aop-project name="EnjoyTrip_cho_kim2"/>
+<aop-project name="SpringDBMybatis"/>
+<aop-project name="board2_file_interceptor"/>
+</aop-reference-model>

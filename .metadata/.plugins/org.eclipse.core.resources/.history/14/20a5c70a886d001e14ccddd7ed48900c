@@ -1,0 +1,10 @@
+package com.mycomapp.myapp2.hasa;
+
+public class UserCalculator {
+	
+	Calculator calculator ;
+	
+	public int add(int n1, int n2) {
+		return calculator.add(n1, n2);
+	}
+}

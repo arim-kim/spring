@@ -1,0 +1,12 @@
+
+public class AnnotationReflectionTest {
+	public static void main(String[] args) throws Exception{
+		// 사용자 정의 Annotation & Reflection 
+		// 일반적 사용 
+		
+		UseMyAnnotation uma = new UseMyAnnotation();
+		uma.m1();
+		// Refelction 
+		uma.getClass().getMethod("m1");
+	}
+}

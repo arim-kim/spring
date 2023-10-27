@@ -1,0 +1,9 @@
+package com.ssafy.hello.di6.javaconfig;
+
+public class ApplicationConfig {
+
+	public static void main(String[] args) {
+
+	}
+
+}

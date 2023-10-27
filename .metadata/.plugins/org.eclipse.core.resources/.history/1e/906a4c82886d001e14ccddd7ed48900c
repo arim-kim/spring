@@ -1,0 +1,10 @@
+package com.mycomapp.myapp2.hasa;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UseCalculator {
+	public int add(int n1, int n2) {
+		return n1 + n2;
+	}
+}

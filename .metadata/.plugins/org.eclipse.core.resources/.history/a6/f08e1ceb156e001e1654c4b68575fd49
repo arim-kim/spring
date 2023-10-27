@@ -1,0 +1,3 @@
+module spring_di_xml {
+	requires java.sql;
+}

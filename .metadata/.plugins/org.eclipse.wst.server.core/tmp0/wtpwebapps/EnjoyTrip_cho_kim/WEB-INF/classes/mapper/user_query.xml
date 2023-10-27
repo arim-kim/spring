@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.mycom.enjoytrip.user.dao">
+
+	<insert id="registerUser"
+		parameterType="com.mycom.enjoytrip.user.dto.UserDto">
+		insert into user (user_id, email, password, name, SALT)
+		values (#{userId}, #{userEmail}, #{userPassword}, #{userName}, #{SALT})
+	</insert>
+	
+	<update id="modifyUser"
+		parameterType="com.mycom.enjoytrip.user.dto.UserDto">
+	update user set name = #{userName} , email = #{userEmail}, password =  #{userPassword} where user_id = #{userId}
+	</update>
+	
+	<delete id="deleteUser"
+		parameterType="String">
+	delete from user where user_id = #{user_id}
+	</delete>
+	
+	<select id = "getUser" parameterType="String" resultType = "com.mycom.enjoytrip.user.dto.UserDto">
+	select user_id, email, password, name, SALT from user where user_id = #{user_id}
+	</select>
+	
+
+</mapper>

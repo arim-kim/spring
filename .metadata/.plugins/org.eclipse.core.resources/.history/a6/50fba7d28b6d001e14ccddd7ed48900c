@@ -1,0 +1,14 @@
+package com.mycomapp.myapp2.all;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class AllCalculator {
+	@Autowired
+	Calculator calculator; // interface
+
+	public int add(int n1, int n2) {
+		return calculator.add(n1, n2);
+	}
+}

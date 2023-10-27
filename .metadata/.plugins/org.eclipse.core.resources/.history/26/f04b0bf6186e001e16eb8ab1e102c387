@@ -1,0 +1,5 @@
+package com.ssafy.module;
+module spring_di_xml {
+	requires java.sql;
+	requires spring.context;
+}

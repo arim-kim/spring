@@ -1,0 +1,20 @@
+package com.mycomapp.myapp2.xml;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class CalcMain {
+
+	public static void main(String[] args) {
+		//Spring DI by xml
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("calc-xml.xml");
+		
+		
+		Calculator calculator = context.getBean(Calculator.class);
+		int n = calculator.add(7, 3);
+		System.out.println(n);
+		
+		context.close();
+	}
+
+}

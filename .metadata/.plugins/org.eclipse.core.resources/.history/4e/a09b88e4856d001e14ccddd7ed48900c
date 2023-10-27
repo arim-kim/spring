@@ -1,0 +1,5 @@
+package com.mycomapp.myapp2.configuration;
+
+public class CalcConfiguration {
+
+}

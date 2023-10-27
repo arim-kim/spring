@@ -1,0 +1,11 @@
+package com.mycomapp.myapp2.xml;
+
+public class CalcMain {
+
+	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+		int n = calculator.add(7, 3);
+		System.out.println(n);
+	}
+
+}

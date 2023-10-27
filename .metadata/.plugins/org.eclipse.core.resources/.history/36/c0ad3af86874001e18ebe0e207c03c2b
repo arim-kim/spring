@@ -1,0 +1,12 @@
+package com.mycom.enjoytrip.sido.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.mycom.enjoytrip.sido.dto.SidoDto;
+
+@Mapper
+public interface SidoDao {
+	List<SidoDto> sidoList();
+}

@@ -1,0 +1,6 @@
+package com.mycomapp.myapp2.all;
+
+public interface Calculator {
+	@Autowired
+	Calculator calculator ;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycom.mydb.dao.StudentDao">
+
+
+	<select id="studentDetail" parameterType="int"
+		resultType="com.mycom.mydb.dto.StudentDto">
+		select student_id, student_nm, email, phone from student where student_id = #{student_id};
+	</select>
+
+	<!-- return 이 Collections 이면 Dto 만 기술 -->
+	<select id="studentList" resultType="com.mycom.mydb.dto.StudentDto">
+		select student_id, student_nm, email, phone from student
+	</select>
+
+	<!-- return 이 primitive 이면 별도 기술 X -->
+	<insert id="studentInsert"
+		parameterType="com.mycom.mydb.dto.StudentDto">
+		insert into student (student_nm, email, phone) 
+		values(#{student_nm}, #{email}, #{phone})
+	</insert>
+
+	<update id="studentUpdate"
+		parameterType="com.mycom.mydb.dto.StudentDto">
+		update emp
+		set first_name = #{firstName}
+		,last_name =
+		#{lastName}
+		,email = #{email}
+		,hiredate = #{hireDate}
+		where employeeId =
+		#{employeeId}
+	</update>
+
+	<delete id="studentDelete" parameterType="int">
+		update emp
+		set first_name =
+		#{firstName}
+		,last_name = #{lastName}
+		,email = #{email}
+		,hiredate =
+		#{hireDate}
+		where employeeId = #{employeeId}
+	</delete>
+
+
+</mapper>
