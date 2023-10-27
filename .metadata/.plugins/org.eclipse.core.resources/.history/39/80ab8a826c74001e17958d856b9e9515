@@ -12,6 +12,7 @@ import com.mycom.electronics.user.service.UserService;
 @Controller
 public class UserController {
 
+	// 수정 반영 확인용
 	UserService service;
 
 	public UserController(UserService service) {

@@ -31,3 +31,11 @@
 0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:54:33 +0900] "GET /enjoytrip/resources/images/main_img3.jpg HTTP/1.1" 200 2191201
 127.0.0.1 - - [27/Oct/2023:10:56:31 +0900] "GET / HTTP/1.1" 404 807
 0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:56:32 +0900] "GET /mybatis/ HTTP/1.1" 200 316
+127.0.0.1 - - [27/Oct/2023:10:56:55 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:56:56 +0900] "GET /electronics/ HTTP/1.1" 200 1365
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:56:58 +0900] "GET /electronics/login?userId=ssafy&userPassword=ssafy HTTP/1.1" 200 11
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:56:58 +0900] "GET /electronics/ HTTP/1.1" 200 1424
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:56:59 +0900] "GET /electronics/logout HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:56:59 +0900] "GET /electronics/ HTTP/1.1" 200 1365
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:57:00 +0900] "GET /electronics/login?userId=ssafy&userPassword=ssafy HTTP/1.1" 200 11
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:10:57:00 +0900] "GET /electronics/ HTTP/1.1" 200 1424
