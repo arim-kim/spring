@@ -2,5 +2,28 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.mycom.electronics.electronics.dao.ElectronicsDao">
+	
+	<select id="getDetail" parameterType="string"
+		resultType="com.mycom.electronics.electronics.dto.ElectronicsDto">
+		select electronicsCode, model, type, price, company
+		from ssafytest.electronics where electronicsCode = #{electronicsCode}
+	</select>
 
+	<!-- return이 Collections이면 Dto만 기술-->
+	<select id="listElec"
+		resultType="com.mycom.electronics.electronics.dto.ElectronicsDto">
+		select electronicsCode, model, type, price, company
+		from ssafytest.electronics
+	</select>
+	
+	<!-- return이 primitive이면 별도 기술 X -->
+	<insert id = "addElec" parameterType = "com.mycom.electronics.electronics.dto.ElectronicsDto">
+		insert into ssafytest.electronics (electronicsCode, model, type, price, company) 
+		values(#{electronicsCode}, #{model}, #{type}, #{price}, #{company}) 
+	</insert>
+	
+	<delete id = "delete" parameterType = "string">
+		delete from ssafytest.electronics
+		where electronicsCode =  #{electronicsCode}
+	</delete>
 </mapper>

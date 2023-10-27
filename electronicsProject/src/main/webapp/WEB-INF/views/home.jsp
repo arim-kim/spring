@@ -9,6 +9,8 @@
 
 	<P>The time on the server is ${serverTime}.</P>
 	<a href="/electronics/electronicsMain"> 페이지로 </a>
+	
+	
 
 	<%
 		UserDto user = (UserDto) request.getSession().getAttribute("user");
@@ -23,7 +25,19 @@
 	<%
 		} else {
 	%>
-	<button id="login">login</button>
+	<form action="${root}/user" method="post">
+	  	<input type="hidden" name="action" value="login">
+	    <div class="form-group">
+	      <label for="id">id:</label>
+	      <input type="text" class="form-control" id="id" name="id" placeholder="ID 입력" value="">
+	    </div>
+	    <div class="form-group">
+	      <label for="pw">Password:</label>
+	      <input type="password" class="form-control" id="pw"  name="pw"  placeholder="비밀번호 입력" >
+	    </div>
+
+	  </form>
+	  	    <button type="button" id="login" class="btn btn-primary">로그인</button>
 	<%
 		}
 	%>
@@ -40,8 +54,8 @@
 
 				try {
 				
-					let userId = "ssafy";
-					let userPassword = "ssafy";
+					let userId = document.querySelector("#id").value;
+					let userPassword = document.querySelector("#pw").value;
 					let urlParams = `?userId=\${userId}&userPassword=\${userPassword}`;
 					let response = await fetch('/electronics/login' + urlParams);
 					let data = await response.json();
