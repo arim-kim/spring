@@ -107,10 +107,11 @@
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
 			<item value="C:\SSAFY\MILL_Spring\springDB"/>
 			<item value="C:\SSAFY\MILL_Spring\EnjoyTrip_cho_kim2"/>
 			<item value="C:\SSAFY\MILL_Spring\electronicsProject"/>
@@ -127,10 +128,11 @@
 			<item value="C:\Users\SSAFY\Downloads\SpringStudy-mybatis\electronicsProject"/>
 			<item value="C:\Users\SSAFY\Downloads\SpringStudy-mybatis\EnjoyTrip_cho_kim"/>
 			<item value="C:\Users\SSAFY\Downloads\SpringStudy-mybatis\SpringDBMybatis"/>
-			<item value=""/>
 			<item value="C:\Users\SSAFY\Downloads\1018_DI_배포\hello_di_배포"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\SSAFY\Downloads\WebTest_buk_03_KimARim.zip"/>
+			<item value="C:\Users\SSAFY\Downloads\homework1027.zip"/>
 			<item value=""/>
 			<item value="C:\Users\SSAFY\Desktop\새 압축(ZIP) 파일.zip"/>
 			<item value="C:\Users\SSAFY\Downloads\1027_배포.zip"/>

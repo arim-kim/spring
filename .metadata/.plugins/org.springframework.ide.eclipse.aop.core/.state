@@ -2,8 +2,8 @@
 <aop-reference-model>
 <aop-project name="EnjoyTrip_cho_kim"/>
 <aop-project name="springDB"/>
-<aop-project name="electronicsProject"/>
 <aop-project name="EnjoyTrip_cho_kim2"/>
+<aop-project name="electronicsProject"/>
 <aop-project name="SpringDBMybatis"/>
 <aop-project name="SpringMVC"/>
 </aop-reference-model>
