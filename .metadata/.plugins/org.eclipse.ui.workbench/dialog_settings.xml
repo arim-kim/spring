@@ -22,6 +22,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\SSAFY\Desktop\SpringTest_buk_03_KimARim.zip"/>
 			<item value="C:\Users\SSAFY\Desktop\새 압축(ZIP) 파일.zip"/>
 			<item value="C:\Users\SSAFY\Desktop\새 압축(ZIP) 파일 (2).zip"/>
 			<item value="C:\Users\SSAFY\Desktop\2023-10-24.zip"/>

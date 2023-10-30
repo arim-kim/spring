@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="EnjoyTrip_cho_kim"/>
+<aop-project name="SpringTest_buk_03_KimARim"/>
 <aop-project name="springDB"/>
 <aop-project name="EnjoyTrip_cho_kim2"/>
 <aop-project name="electronicsProject"/>
